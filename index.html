@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+</head>
+
+
+
+<body>
+
+<div class="jumbotron jumbotron-fluid" style="backround-color: skyblue; color: white;">
+  <div class="container">
+    <h1 class="display-4">Crystal Collector Game!</h1>
+      <p class="lead">You will be given a random number at the start of the game.
+
+There are four crystals below. 
+By clicking on a crystal you will add a specific amount of points to your total score.
+
+You win the game by matching your total score to random number, 
+you lose the game if your total score goes above the random number. 
+
+The value of each crystal is hidden from you until you click on it.
+
+Each time when the game starts, the game will change the value of each crystal. 
+      </p>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col">
+      <div class="card" style="backround-color: skyblue; color: gray;">
+        <div class="card-header text-center">
+        Wins
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center" id="wins">0
+        </li>  
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="backround-color: skyblue; color: gray;">
+        <div class="card-header text-center">
+        Losses
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center" id="losses">0
+        </li>  
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card" style="backround-color: skyblue; color: gray;">
+        <div class="card-header text-center">
+        Crystals
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center">
+         <img src="assets/images/pink.png" id="pink" height="65" width="60">
+         <img src="assets/images/yellow.png" id="yellow" height="65" width="65">
+         <img src="assets/images/green.png" id="green" height="65" width="65">
+         <img src="assets/images/blue.png" id="blue" height="65" width="65">
+        </li>  
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col">
+      <div class="card" style="backround-color: skyblue; color: gray;">
+        <div class="card-header text-center">
+        Random Number Generated
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center" id="random-num-gen">0
+        </li>  
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="backround-color: skyblue; color: gray;">
+        <div class="card-header text-center">
+        Total Score
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center" id="score-total">0
+        </li>  
+        </ul>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
